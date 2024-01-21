@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS pets (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    idade INT NOT NULL,
+    especie VARCHAR(255) NOT NULL,
+    raca VARCHAR(255) NOT NULL,
+    dataAdocao DATE,
+    INDEX(nome)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  
